@@ -13,6 +13,8 @@
     "react-dom": "^16.13.0",
     "react-image-gallery": "^1.0.6",
     "react-image-mapper": "0.0.15",
+    "react-native-paper": "^4.7.2",
+    "react-pdf": "^5.2.0",
     "react-scripts": "3.4.0"
   },
   "scripts": {

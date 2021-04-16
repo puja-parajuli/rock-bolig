@@ -7,7 +7,6 @@ class ContactPage extends Component{
     render() {
         return (
 <div>
-
     <div className="contactInfo">
         <h2> Contact us</h2>
         <span className="lineBreak">Owner: Hiren A. Bhatt</span>

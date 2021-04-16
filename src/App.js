@@ -7,43 +7,26 @@ import {
 } from "react-router-dom"
 import HomePage from "./HomePage";
 import ContactPage from "./Contact";
-import BookSelectHouse from "./BookSelectHouse";
-
+import Navigation from "./Navigation";
+import HorsensRental from "./Pages/HorsensRental";
+import SitePlan from "./Pages/SitePlan";
+import PlanDrawing from "./Pages/PlanDrawing";
 
 
 export default function App() {
   return (
       <Router>
-        <div>
-          <nav>
-            <ul>
-              <li><a className="active" href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/horsensrental">Horsens Rental</a></li>
-              <li><a href="/attachedhouses">Attached houses</a></li>
-              <li><a href="/location">Location</a></li>
-
-            </ul>
-          </nav>
-
+        <div className='pdfImage'>
+          <Navigation/>
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/attachedhouses">
-              <AttachedHouses/>
-            </Route>
-            <Route path="/location">
-               < ContactPage />
-            </Route>
-            <Route path="/horsensrental">
-              <Test/>
-            </Route>
-            <Route path="/">
-              <HomePage />
-            </Route>
+            <Route exact path='/' component={HomePage}/>
+            <Route path='/horsensrental' component={HorsensRental}></Route>
+            <Route path='/siteplan' component={SitePlan}></Route>
+              <Route path='/plandrawing' component={PlanDrawing}></Route>
+
+            <Route path='/contact' component={ContactPage}></Route>
           </Switch>
         </div>
       </Router>
@@ -54,13 +37,8 @@ function About() {
   return <h2>About</h2>;
 }
 
-function AttachedHouses() {
-  return <h2>AttachedHouses</h2>;
-}
 
-function HorsensRental() {
-  return <h2>Horsens Rental</h2>;
-}
+
 
 class Test extends Component
 {

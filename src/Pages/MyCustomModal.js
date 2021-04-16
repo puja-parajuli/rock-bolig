@@ -30,7 +30,7 @@ class MyCustomModal extends Component{
 }
 
 const Modal = ({ handleClose, show, children }) => {
-    console.log("tryuing to open modal");
+    console.log("trying to open modal");
     const showHideClassName = show ? "modal display-block" : "modal display-none";
 
     return (
