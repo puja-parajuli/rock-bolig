@@ -36,17 +36,3 @@ export default function App() {
 function About() {
   return <h2>About</h2>;
 }
-
-
-
-
-class Test extends Component
-{
-render() {
-  return (
-      <div>
-        <h2>This is test case scenario</h2>
-      </div>
-  )
-}
-}

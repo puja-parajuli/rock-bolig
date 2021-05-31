@@ -10,8 +10,6 @@ const iniLat = 55.847325;
 const iniLng = 9.837784;
 const sdvLat = 55.845961;
 const sdvLng = 9.836821;
-
-
 export class MapContainer extends Component {
     render() {
         return (

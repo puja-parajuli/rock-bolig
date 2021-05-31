@@ -4,8 +4,7 @@ import App from './App'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './index.css'
-import MyCustomModal from "./Pages/MyCustomModal";
+import './index.css';
 
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'));
